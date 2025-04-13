@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Link</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="addLink.css">
+    
+</head>
+<body>
+
+<div class="container my-5">
+    <!-- Header -->
+    <header class="header d-flex justify-content-between align-items-center mb-4">
+        <h1 class="display-4">Add New Link</h1>
+    </header>
+
+    <!-- Add Link Form -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h4 class="mb-0">Add New Link</h4>
+        </div>
+        <div class="card-body">
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <label for="link">Link URL</label>
+                    <input type="url" class="form-control" id="link" name="LinkURL" placeholder="Enter link" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" name="Description" rows="3" placeholder="Enter description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="password  ">Password</label>
+                    <input type="password" class="form-control" id="password" name="Password" placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn btn-success mt-2">Add Link</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Button to View All Links -->
+    <div class="text-center">
+        <a href="/Links" class="btn btn-info">View All Links</a>
+    </div>
+</div>
+
+
+</body>
+</html>
