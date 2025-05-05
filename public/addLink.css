@@ -1,34 +1,73 @@
+/* Base Styles */
 body {
-    background-color: #f7f9fc;
-    /* font-family: "Courgette", cursive; */
+    background-color: #f5f0e6; /* بيج فاتح */
+    background-repeat: repeat;
+    background-size: auto;
+    font-family: 'Poppins', sans-serif;
+    transition: all 1s ease-in-out;
 }
+
+
+  .fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+
+
+
+
+
+/* Header */
 .header {
-    background-color: #4e73df;
+    background-color: #8b5e3c; /* بني متوسط */
     color: white;
     padding: 15px 0;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+.li{
+    color: #8b5e3c; /* بني متوسط */
+
+}
 .header h1 {
     font-size: 2.5rem;
+    font-family: 'Courgette', cursive;
 }
+
+/* Cards */
+.card {
+    background-color: #fffaf3; /* بيج أفتح */
+    border: 1px solid #d2b48c; /* بني فاتح */
+}
+
+.card-header {
+    background-color: #8b5e3c;
+    color: white;
+    font-family: 'Courgette', cursive;
+}
+
+/* Buttons */
 .btn {
     border-radius: 50px;
     padding: 10px 20px;
 }
+
 .btn-success {
-    background-color: #1cc88a;
-    border-color: #17a673;
+    background-color: #8b5e3c;
+    border-color: #8b5e3c;
 }
+
 .btn-success:hover {
-    background-color: #17a673;
-    border-color: #1cc88a;
+    background-color: #a66b42;
+    border-color: #a66b42;
 }
-.btn-info {
-    background-color: #17a2b8;
-    border-color: #17a2b8;
+
+/* Links */
+a {
+    color: #6b3e2e;
 }
-.btn-info:hover {
-    background-color: #138496;
-    border-color: #117a8b;
+
+a:hover {
+    color: #a66b42;
 }

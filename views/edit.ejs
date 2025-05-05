@@ -10,9 +10,87 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-
+<!-- <link rel="stylesheet" href="home.css"> -->
   <!-- External Stylesheets -->
   <link rel="stylesheet" href="edit.css" />
+ <style>body {
+  font-family: 'Poppins', sans-serif;
+  background: url('images/7522f9ee3f1cd2bfe3d52503d7921a4a.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(245, 233, 221, 0.8); /* بيج شفاف */
+  z-index: -1;
+}
+
+.edit-container {
+  width: 100%;
+  max-width: 600px;
+  background: #fffaf4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.edit-container h2 {
+  color: #8B5E3C; /* بني */
+  font-family: "Courgette", cursive;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #d2a679; /* بيج غامق */
+}
+
+.save-btn {
+  background-color: #8B5E3C;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.save-btn:hover {
+  background-color: #704832;
+  transform: scale(1.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #8B5E3C;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  color: #a9744f;
+  text-decoration: underline;
+}</style>
 </head>
 <body>
   <div class="container">

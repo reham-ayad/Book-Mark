@@ -1,53 +1,76 @@
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("images/7522f9ee3f1cd2bfe3d52503d7921a4a.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
 
-  .link-card {
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: white;
-  }
-  
-  .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .link-title {
-    color: #4e73df;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .link-title:hover {
-    color: #1cc88a;
-    text-decoration: underline;
-  }
-  
-  .card-text {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.95rem;
-    color: #333;
-  }
-  .add-link-btn {
-    background-color: #1cc88a;
-    border-color: #17a673;
-    color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    padding: 15px 30px;
-    border-radius: 50px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 100;
-    transition: all 0.3s ease;
-  }
-  
-  .add-link-btn:hover {
-    background-color: #17a673;
-    border-color: #1cc88a;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  }
+.header {
+  background-color: #8b5e3c;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.link-card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-color: #fffef8;
+  border: 1px solid #d2b48c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link-title {
+  color: #4e73df;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-title:hover {
+  color: #1cc88a;
+  text-decoration: underline;
+}
+
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.add-link-btn {
+  background-color: #8b5e3c;
+  border-color: #8b5e3c;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 50px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.add-link-btn:hover {
+  background-color: #a66b42;
+  border-color: #a66b42;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
 .btn:focus,
 .btn:active {
   outline: none !important;
@@ -72,4 +95,31 @@
 .delete-btn:active {
   color: #c0392b;
   transform: scale(1.1);
+}
+.link-card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  ),
+  url("images/826024aa0dd1f7d1cba5fef2b53e3cab.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fffef8;
+  border: 1px solid #d2b48c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.link-title {
+  display: inline-block;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link-title:hover {
+  transform: scale(1.05);
 }

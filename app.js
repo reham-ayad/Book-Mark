@@ -39,7 +39,7 @@ userDB.on('connected', () => {
 
 // في حالة حدوث خطأ في الاتصال
 userDB.on('error', (err) => {
-  console.error("❌ Error connecting to mydb:", err);
+  console.error("❌ Error connecting to db:", err);
 });
 
 // إعداد الجلسات بشكل صحيح

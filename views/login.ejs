@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="addLink.css">
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="addLink.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
-<div class="container my-5">
-    <!-- Header -->
-    <header class="header d-flex justify-content-between align-items-center mb-4">
-        <h1 class="display-4">Login</h1>
-    </header>
-
-    <!-- Login Form -->
-    <div class="card mb-4">
-        <div class="card-header">
-            <h4 class="mb-0">Welcome Back!</h4>
-        </div>
-        <div class="card-body">
-            <form action="/login" method="POST">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="card w-75 h-75 shadow-lg overflow-hidden">
+        <div class="row h-100 g-0">
+  
+          <!-- Left Side: Login Form -->
+          <div class="col-md-6 d-flex flex-column justify-content-center p-4">
+            <div class="card-header border-0 bg-transparent px-0">
+              <h4 class="li mb-3">Welcome Back!</h4>
+            </div>
+            <div class="card-body p-0">
+              <form action="/login" method="POST">
                 <div class="form-group mb-3">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button  type="submit" class="btn btn-success mt-2">Login</button>
-            </form>
+                <button type="submit" class="btn btn-success w-100 mt-3">Login</button>
+              </form>
+            </div>
+            <div class="text-center mt-3">
+              <p>Don't have an account? <a href="/register" class="text-decoration-none">Register here</a></p>
+            </div>
+          </div>
+  
+          <!-- Right Side: Image -->
+          <div class="col-md-6">
+            <img src="images/7522f9ee3f1cd2bfe3d52503d7921a4a.jpg" alt="Login Illustration"
+                 class="img-fluid h-100 w-100" style="object-fit: cover;">
+          </div>
+  
         </div>
+      </div>
     </div>
-
-    <!-- Button to Register -->
-    <div class="text-center">
-        <p>Don't have an account? <a href="/register" class="text-decoration-none">Register here</a></p>
-    </div>
-</div>
-
-</body>
+  </body>
 </html>
